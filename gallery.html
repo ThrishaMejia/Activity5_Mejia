@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <title>Mejia's Creatives</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        body{
+            font-family: Arial sans-serif;
+            color: #222;
+
+            background-image: linear-gradient(
+                rgba(0,0,0,35),
+                rgba(0,0,0,35)
+            ), url("background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        header{
+            background-color: rgba(255,255,255,0.95);
+            padding: 25px;
+            text-align: center;
+        }
+        .logo{
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        nav{
+            background-color: #222;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: bold;
+        }
+        nav a:hover{
+            color: #d4af37;
+        }
+        main{
+            min-height: 75vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 20px;
+        }
+        .card{
+            background-color:aliceblue;
+            justify-content: center;
+            width: 900px;
+            max-width: 100%;
+            text-align: center;
+            padding: 100px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0,3);
+        }
+
+        h1{
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        .tagline{
+            font-size: 18px;
+            font-style: italic;
+            color: #b18b00;
+            margin-bottom: 15px;
+        }
+        .description{
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 30px;
+        }
+         .gallery{
+            justify-content: center;
+            margin-bottom: 3px;
+            height: 307px;
+            max-width: 1000px;
+            margin: auto;
+            background-color:aliceblue;
+            padding: 10px;
+            border-radius: 1px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        .gallery img{
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #d4af37;
+            object-fit: cover;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .gallery img:hover{
+            opacity: 0.85;
+        }
+        .text{
+            text-align: center;
+        }
+        .text img{
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: 0.2s;
+        }
+        .text p{
+            margin: 5px 0 8px;
+            font-size: 12px;
+            color: #555;
+        }
+        .lightbox{
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            inset: 0;
+            background: rgba(0,0,0,0.9);
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox img{
+            max-width: 90%;
+            max-height: 90%;
+        }
+        .close{
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+        }
+        .btn{
+            display: inline-block;
+            background-color: #222;
+            color: white;
+            padding: 13px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn:hover{
+            background-color: #d4af37;
+            color: #222;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">MEJIA THRISHA's CREATIVES</div>
+</header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+<main>
+<div class="card">    
+    <h1>EXPERIENCE THE CREATIVE</h1>
+    <p class="tagline"> Where imagination meets meaningful design.</p>
+    <div class="gallery">
+        <div class="text">
+            <img src="photo.jpg"style="border-radius: 50%; width: 100px; height: 100px;">
+            <p>Product 01</p>
+        </div>
+        <div class="text">
+            <img src="photo2.jpg"style="border-radius: 50%; width: 100px; height: 100px;">
+            <p>Product 02</p>
+        </div>
+        <div class="text">
+            <img src="photo3.jpg"style="border-radius: 50%; width: 100px; height: 100px;">
+            <p>Product 03</p>
+        </div>
+        <div class="text">
+            <img src="limp.jpg"style="border-radius: 50%; width: 100px; height: 100px;">
+            <p>Product 04</p>
+        </div>
+        <div class="text">
+            <img src="linkin.jpg"style="border-radius: 50%; width: 100px; height: 100px;">
+            <p>Product 05</p>
+        </div>
+        <div class="text">
+            <img src="avril.jpg"style="border-radius: 50%; width: 100px; height: 100px;">
+            <p>Product 06</p>
+        </div>
+        <div class="text">
+            <img src="evan.jpg"style="border-radius: 50%; width: 100px; height: 100px;">
+            <p>Product 07</p>
+        </div>
+        <div class="text">
+            <img src="korn.jpg"style="border-radius: 50%; width: 100px; height: 100px;">
+            <p>Product 08</p>
+        </div>
+        <div class="text">
+            <img src="skillet.jpg"style="border-radius: 50%; width: 100px; height: 100px;">
+            <p>Product 09</p>
+        </div>
+        <div class="text">
+            <img src="chem.jpg"style="border-radius: 50%; width: 100px; height: 100px;">
+            <p>Product 10</p>
+        </div>
+        <div class="text">
+            <img src="deftones.jpg"style="border-radius: 50%; width: 100px; height: 100px;">
+            <p>Product 11</p>
+        </div>
+        <div class="text">
+            <img src="flower.jpg"style="border-radius: 50%; width: 100px; height: 100px;">
+            <p>Product 12</p>
+        </div>
+</div>
+    </div>
+    </main>
+    <footer>
+        © 2026 Mejia's Creatives
+    </footer>
+</body>
+</html>
