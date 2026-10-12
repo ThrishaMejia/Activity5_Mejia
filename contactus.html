@@ -227,18 +227,11 @@
             <textarea id="message" name="message" placeholder="Write your comments pr messages here..." rows="4" required> </textarea>
             <button type="submit">SEND MESSAGE</button>
             </form>
-            <div id="confirm" style="display: none;">
+            <div id="submit" style="display: none;">
                 <h2>Message Sent Successfully!</h2>
                 <p>Thank you for contacting us. We appreciate your message!</p>
                 </div>
         </section>
-        <script>
-            document.getElementById("contactForm").addEventListener("submit", function(event){
-                event.preventDefault();
-            document.getElementById("contactForm").style.display = "none";
-            document.getElementById("confirm").style.display = "block";
-            });
-        </script>
     </div>
     </main>
     <footer>
