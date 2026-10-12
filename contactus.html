@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <title>Mejia's Creatives</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        body{
+            font-family: Arial sans-serif;
+            color: #222;
+
+            background-image: linear-gradient(
+                rgba(0,0,0,35),
+                rgba(0,0,0,35)
+            ), url("background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        header{
+            background-color: rgba(255,255,255,0.95);
+            padding: 25px;
+            text-align: center;
+        }
+        .logo{
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        nav{
+            background-color: #222;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: bold;
+        }
+        nav a:hover{
+            color: #d4af37;
+        }
+        main{
+            min-height: 75vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 20px;
+        }
+        .contact-container{
+            background-color:aliceblue;
+            justify-content: center;
+            width: 900px;
+            max-width: 100%;
+            text-align: center;
+            padding: 100px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0,3);
+        }
+        .contact-container h2{
+            font-size: 18px;
+            font-style: italic;
+            color: black;
+            margin-bottom: 5px;
+        }
+        .subtitle{
+            font-size: 18px;
+            font-style: italic;
+            color: #b18b00;
+            margin-bottom: 15px;
+        }
+        .contact-content{
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            gap: 50px
+        }
+        .contact-details h3{
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+        .contact-details h4{
+            font-size: 17px;
+            color: #555;
+            margin-top: 20px;
+            margin-bottom: 1px;
+        }
+        .contact-details p{
+            font-size: 14px;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .contact-form form{
+            display:flex;
+            flex-direction: column;
+        }
+        .contact-form label{
+            font-size: 11px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .contact-form{
+            padding: 13px;
+            margin-bottom: 18px;
+            border: 1px solid #ddd;
+            font-family: Arial sans-serif;
+            font-size: 13px;
+            width: 100%;
+        }
+        .contact-form textarea{
+            padding: 13px;
+            margin-bottom: 18px;
+            border: 1px solid #ddd;
+            font-family: Arial sans-serif;
+            font-size: 13px;
+            width: 100%;
+        }
+        .contact-form textarea{
+            resize: vertical;
+        }
+        h1{
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        .tagline{
+            font-size: 18px;
+            font-style: italic;
+            color: #b18b00;
+            margin-bottom: 15px;
+        }
+        .contact-description{
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .contact-form button{
+            display: inline-block;
+            background-color: #222;
+            color: white;
+            padding: 13px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-form button:hover{
+            background-color: #d4af37;
+            color: #222;
+        }
+        .confirmation{
+            text-align: center;
+            padding: 25px 10px;
+            background-color: #d4af37;
+            border: 1px solid #555;
+            border-radius: 8px;
+        }
+        .confirmation h3{
+            color: #555;
+            margin-bottom: 12px;
+        }
+        .confirmation p{
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .confirmation button{
+            background-color: #d4af37;
+            color: white;
+            border:none;
+            padding: 12px 18px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        [hidden]{
+            display: none !important;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">MEJIA THRISHA's CREATIVES</div>
+</header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+<main>
+<div class="contact-container">    
+    <h2>Get In Touch</h2>
+    <p class="subtitle">
+        Have a question or a project in mind? Reacch us out below.
+    </p>
+    <div class="contact-content">
+        <section class="contact-details">
+            <h3>CONTACT DETAILS</h3>
+            <h4>EMAIL</h4>
+            <p>20260211@s.ubaguio.edu</p>
+            <h4>STUDIO ADDRESS</h4>
+            <p>143 Bandang Left, Baguio, <br> Benguet, Philippines 2600</p>
+            <h4>BUSINESS HOURS</h4>
+            <p>Sat - Sun: 9:AM - 6:PM</p>
+        </section>
+        <section class="contact-form">
+            <form action="#" method="post">
+            <label for="name">FULL NAME</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <label for="email">EMAIL ADDRESS</label>
+            <input type="email" id="email" placeholder="email@example.com" required>
+            <label for="message">COMMENTS / MESSAGE</label>
+            <textarea id="message" name="message" placeholder="Write your comments pr messages here..." rows="4" required> </textarea>
+            <button type="submit">SEND MESSAGE</button>
+            </form>
+            <div id="confirm" style="display: none;">
+                <h2>Message Sent Successfully!</h2>
+                <p>Thank you for contacting us. We appreciate your message!</p>
+                </div>
+        </section>
+
+    </div>
+    </main>
+    <footer>
+        © 2026 Mejia's Creatives
+    </footer>
+</body>
+</html>
